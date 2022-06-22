@@ -6,14 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/main.css">
-    <title>lorem</title>
+    <script src="./js/index.js" defer></script>
+    <title>ipsum</title>
 </head>
 <body>
     <header>
         <div class="header__wrapper">
-                <button class="hamburger__menu_btn">
-                    <div class="hamburger"></div>
-                </button>
+            <button class="hamburger__menu_btn " data-hamburger>
+                <div class="hamburger"></div>
+            </button>
+            <nav class="">
+                <ul>
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#likes">Likes</a></li>
+                    <li><a href="#wishes">Wishes</a></li>
+                    <li><a href="#">fun fun</a></li>
+                </ul>
+            </nav>
             <div class="img__container">
                 <div class="img">
                     <img src="./assets/images/stephen-leonardi-Zn2McoYVU7k-unsplash.jpg" alt="">
@@ -24,54 +34,125 @@
 
     <main>
         <div class="main__wrapper">
-            <section class="hero__container container">
+            <section class="hero__container container" id="home">
                <div class="slider">
                 <div class="slider__container">
-                    <div class="carousel">
-                        <div class="carousel__image">
+                    <div class="carousel" data-carousel>
+                        <div class="carousel__image" data-carousel-image>
                             <img src="./assets/images/horizontal-shot-young-attractive-african-cook-cutting-vegetables-with-knife.jpg" alt="">
                         </div>
-                        <div class="carousel__image">
-                            <img src="./assets/images/stephen-leonardi-Zn2McoYVU7k-unsplash.jpg" alt="">
-                        </div>
-                        <div class="carousel__image">
-                            <!-- <img src="./assets/images/horizontal-shot-young-attractive-african-cook-cutting-vegetables-with-knife.jpg" alt=""> -->
-                        </div>
-                        <div class="carousel__image">
+                        <div class="carousel__image" data-carousel-image>
                             <img src="./assets/images/stephen-leonardi-Zn2McoYVU7k-unsplash.jpg" alt="">
                         </div>
                     </div>
                 </div>
                 <div class="slider__indicator">
-                    <div class="slider__indicator__wrapper">
-                        <div class="indicator active"></div>
-                        <div class="indicator"></div>
-                        <div class="indicator"></div>
-                        <div class="indicator"></div>
-                    </div>
                 </div>
                </div>
-
             </section>
     
-            <section class="about__container container">
-                about
+            <section class="about__container container" id="about">
+                <h2>About</h2>
+                <div class="about__content">
+                    <div class="profile__img">
+                        <img src="./assets/images/horizontal-shot-young-attractive-african-cook-cutting-vegetables-with-knife.jpg" alt="">
+                    </div>
+                    <div class="about__text">
+                        <p>Kamara is Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur dolore id nisi officiis architecto voluptatum iste facere accusamus, molestiae cupiditate.</p>
+                        <p>also, Kamara Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, mollitia! Cum dolor temporibus laboriosam fugit, soluta veniam distinctio nisi quod!</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste amet quae, porro culpa autem corrupti magnam earum debitis sed animi maxime quod incidunt necessitatibus, assumenda ipsam! Nemo, atque possimus!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur harum, nobis necessitatibus quibusdam dolor nostrum consequatur obcaecati ut quis iusto voluptatum tempora optio aliquid magni culpa nam atque veniam quae!</p>
+                    </div>
+                </div>
             </section>
     
-            <section class="likes__container container">
-                likes
+            <section class="likes__container container" id="likes">
+                <h2>Likes</h2>
+                <div class="card__container">
+                    <div class="card__grid">
+                        <div class="card">
+                            <div class="card__img">
+                                <img src="./assets/images/horizontal-shot-young-attractive-african-cook-cutting-vegetables-with-knife.jpg" alt="">
+                            </div>
+                            <div class="card__text">
+                                <h3>header</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, cum.</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card__img">
+                                <img src="./assets/images/stephen-leonardi-Zn2McoYVU7k-unsplash.jpg" alt="missing">
+                            </div>
+                            <div class="card__text">
+                                <h3>header</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, cum.</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam.</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card__img">
+                                <img src="./assets/images/horizontal-shot-young-attractive-african-cook-cutting-vegetables-with-knife.jpg" alt="">
+                            </div>
+                            <div class="card__text">
+                                <h3>header</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, cum.</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card__img">
+                                <img src="./assets/images/stephen-leonardi-Zn2McoYVU7k-unsplash.jpg" alt="">
+                            </div>
+                            <div class="card__text">
+                                <h3>header</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, cum.</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card__img">
+                                <img src="./assets/images/horizontal-shot-young-attractive-african-cook-cutting-vegetables-with-knife.jpg" alt="">
+                            </div>
+                            <div class="card__text">
+                                <h3>header</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, cum.</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card__img">
+                                <img src="./assets/images/stephen-leonardi-Zn2McoYVU7k-unsplash.jpg" alt="">
+                            </div>
+                            <div class="card__text">
+                                <h3>header</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, cum.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
     
-            <section class="wishes__container container">
-                wishes
+            <section class="wishes__container container" id="wishes">
+                <h2>Wishes</h2>
+                <div class="wish__container">
+                    <div class="wish__wrapper" data-wishes-wrapper>
+                        <img src="" alt="">
+                    </div>
+                </div>
             </section>
         </div>
     </main>
 
     <footer>
         <div class="footer__wrapper">
-            footer
+            <p>KamaraSome &copy; 2022 </p>
         </div>
     </footer>
+    <!-- <div class="back__to__top" data-top>
+        <button>top</button>
+    </div> -->
 </body>
 </html>
