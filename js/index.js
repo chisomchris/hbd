@@ -81,8 +81,14 @@ const headerModule = (() => {
 
 
 const wish = (function() {
-  const wishes = ['horizontal-shot-young-attractive-african-cook-cutting-vegetables-with-knife.jpg',
-    'stephen-leonardi-Zn2McoYVU7k-unsplash.jpg'
+  const wishes = ['Birthday-Messages-for-Brother-768x543.jpg',
+    'Birthday-Messages-for-Girlfriend.jpg',
+    'Birthday-Messages-for-Husband-1-768x545.jpg',
+    'Birthday-Wishes-for-Daughter-1.jpg',
+    'birthday-wishes-for-friend-its-time-to-shine-1080x720.png.pagespeed.ce.ODuzDCXY-2.png',
+    'Birthday-Wishes-for-Sister-3.jpg',
+    'Birthday-Wishes-for-Wife.jpg',
+    ''
   ]
   const baseRoute = './assets/images/'
   const canvas = document.querySelector('[data-wishes-wrapper] > img');
@@ -110,7 +116,7 @@ const wish = (function() {
    
   }
   changePic()
-  setInterval(changePic, 45000)
+  setInterval(changePic, 10000)
 
   return{ canvas}
 })()
