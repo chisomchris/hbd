@@ -223,7 +223,7 @@ main{
     justify-content: center;
     align-items: center;
     background-color: rgb(255, 255, 255);
-    gap: 1.5rem;
+    gap: 25px;
     padding: calc( calc(.25 * var(--base-font)) + .25em) calc( calc( 0.75 * var(--base-font)) + .5em);
     border-radius: 5rem;
 }
@@ -255,12 +255,14 @@ main{
 .carousel__image{
  overflow: hidden;
  border-radius: .3rem;
+ background-color: #ffd000;
 }
 .carousel__image img{
     height: 100%;
     width: 100%;
     object-fit: cover;
     object-position: center bottom;
+    opacity: .2;
 }
 img{
     width: 100%;
