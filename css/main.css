@@ -255,14 +255,16 @@ main{
     
   }
 .carousel__image{
- border-radius: .3rem;
- background-color: #fcefb6;
+    height: 100%;
+    overflow: hidden;
+    border-radius: .3rem;
+    background-color: #ffd00054;
 }
 .carousel__image img{
     height: 100%;
     width: 100%;
-    object-fit: cover;
-    object-position: center;
+    /* object-fit: cover; */
+    /* object-position: center center; */
 }
 img{
     width: 100%;
@@ -292,14 +294,13 @@ img{
     font-family: 'Courier New', Courier, monospace;
 }
 .card__img{
-    border:red solid 1px;
-    padding: 10%;
-}
-.card img{
     height: 17.5rem;
-    object-fit: cover;
     width: 100%;
-    object-position: center;
+}
+.card__img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 h1, h2{
     color: #ffd000;

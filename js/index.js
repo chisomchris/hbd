@@ -88,15 +88,15 @@ const wish = (function() {
     'birthday-wishes-for-friend-its-time-to-shine-1080x720.png.pagespeed.ce.ODuzDCXY-2.png',
     'Birthday-Wishes-for-Sister-3.jpg',
     'Birthday-Wishes-for-Wife.jpg',
-    'happy-birthday-many-happy-returns',
-    'Happy-Birthday-Messages-768x557',
-    'Happy-Birthday-To-You',
-    'Happy-Birthday-Wishes-768x561',
-    'Happy-Birthday',
-    'long-happy-birthday-message',
-    'Religious-Birthday-Wishes-1-768x605',
-    'Romanric-Birthday-Messages',
-    'warmest-wishes-for-a-happy-birthday'
+    'happy-birthday-many-happy-returns.jpg',
+    'Happy-Birthday-Messages-768x557.jpg',
+    'Happy-Birthday-To-You.jpg',
+    'Happy-Birthday-Wishes-768x561.jpg',
+    'Happy-Birthday.jpg',
+    'long-happy-birthday-message.jpg',
+    'Religious-Birthday-Wishes-1-768x605.jpg',
+    'Romanric-Birthday-Messages.jpg',
+    'warmest-wishes-for-a-happy-birthday.jpg'
   ]
   const baseRoute = './assets/images/'
   const canvas = document.querySelector('[data-wishes-wrapper] > img');
