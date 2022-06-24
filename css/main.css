@@ -4,7 +4,7 @@ html{
     --width:90%;
     --text-color: rgb(42, 42, 83) ;
     background-color: #ffffff;
-    scroll-padding-top: 5rem;
+    scroll-padding-top: 4rem;
     scroll-behavior: smooth;
 }
 body{
@@ -261,8 +261,8 @@ main{
 .carousel__image img{
     height: 100%;
     width: 100%;
-    /* object-fit: cover; */
-    /* object-position: center; */
+    object-fit: cover;
+    object-position: center;
 }
 img{
     width: 100%;
@@ -290,6 +290,10 @@ img{
     text-transform: capitalize;
     color: var(--text-color);
     font-family: 'Courier New', Courier, monospace;
+}
+.card__img{
+    border:red solid 1px;
+    padding: 10%;
 }
 .card img{
     height: 17.5rem;
@@ -407,7 +411,9 @@ footer{
 }
 .wish__text{
     margin-top: 2rem;
-    padding: calc(0.75 * var(--padding));
+    padding-top: calc(0.75 * var(--padding));
+    padding-bottom: calc(0.75 * var(--padding));
+    text-align: justify;
 
 }
 .wish__wrapper img{

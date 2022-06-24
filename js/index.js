@@ -88,6 +88,15 @@ const wish = (function() {
     'birthday-wishes-for-friend-its-time-to-shine-1080x720.png.pagespeed.ce.ODuzDCXY-2.png',
     'Birthday-Wishes-for-Sister-3.jpg',
     'Birthday-Wishes-for-Wife.jpg',
+    'happy-birthday-many-happy-returns',
+    'Happy-Birthday-Messages-768x557',
+    'Happy-Birthday-To-You',
+    'Happy-Birthday-Wishes-768x561',
+    'Happy-Birthday',
+    'long-happy-birthday-message',
+    'Religious-Birthday-Wishes-1-768x605',
+    'Romanric-Birthday-Messages',
+    'warmest-wishes-for-a-happy-birthday'
   ]
   const baseRoute = './assets/images/'
   const canvas = document.querySelector('[data-wishes-wrapper] > img');
@@ -115,7 +124,7 @@ const wish = (function() {
    
   }
   changePic()
-  setInterval(changePic, 30000)
+  setInterval(changePic, 45000)
 
   return{ canvas}
 })()
@@ -130,7 +139,6 @@ const options = {
   threshold : 0,
   rootMargin : '-200px 0px -300px 0px'
 }
-console.log(sections)
 
 const observer = new IntersectionObserver(function(entries, observer) {
   entries.forEach(entry => {
@@ -147,4 +155,3 @@ sections.forEach(
     observer.observe(section)
   }
 )
-// observer.observe(sections)
