@@ -35,7 +35,7 @@ header .header__wrapper{
 .header__wrapper nav{
     background-color: white;
     position: absolute;
-    top: calc(100% + (0.5 * var(--padding)));
+    top: calc(98% + (0.5 * var(--padding)));
     left: calc( -100% - 5vw);
     z-index: 2;
     padding-bottom: 1rem;
@@ -56,7 +56,7 @@ ul{
 nav li {
     padding: .75rem 3rem .75rem 5vw;
     font-size: 1.25rem;
-    border-bottom: #ffd000 dashed 1px;
+    border-bottom: #00000020 dashed 1px;
 }
 nav li:last-child {
     border-bottom:none;
@@ -346,6 +346,10 @@ section > h2{
 }
 p::first-letter{
     text-transform: uppercase;
+}
+.about__content img{
+    width: 100%;
+    height: auto;
 }
 
 /* media query */

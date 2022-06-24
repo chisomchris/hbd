@@ -54,20 +54,24 @@ function setCarousel(sliderItems, element, index) {
   });
 }
 
-const headerModule = (() => {
+(() => {
+  const links = document.querySelectorAll("nav ul li")
   const  menuBtn = document.querySelector("[data-hamburger]")
   const navMenu = document.querySelector("header nav")
-  const toggleMenu = () => {
-    menuBtn.addEventListener("click", (e) => {
+    menuBtn.addEventListener('click', () => {
       navMenu.classList.toggle("active");
       menuBtn.classList.toggle('active')
-    })}
+    })
+  links.forEach(btn => {
+    btn.addEventListener('click', () =>{
+      navMenu.classList.remove("active");
+      menuBtn.classList.remove('active')
+    })
+  })
+})();
 
-    return {toggleMenu}
-})()
 
-
-const wish = (function() {
+(function() {
   const wishes = ['Birthday-Messages-for-Brother-768x543.jpg',
     'Birthday-Messages-for-Girlfriend.jpg',
     'Birthday-Messages-for-Husband-1-768x545.jpg',
@@ -112,14 +116,11 @@ const wish = (function() {
   }
   changePic()
   setInterval(changePic, 45000)
-
-  return{ canvas}
 })()
 
 setCarousel(carousel.sliderItems.length, carousel.body, 0);
-headerModule.toggleMenu();
 
- (function(){
+(function(){
     const sections = document.querySelectorAll('section')
     const options = {
       threshold : 0,
