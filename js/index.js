@@ -88,7 +88,6 @@ const wish = (function() {
     'birthday-wishes-for-friend-its-time-to-shine-1080x720.png.pagespeed.ce.ODuzDCXY-2.png',
     'Birthday-Wishes-for-Sister-3.jpg',
     'Birthday-Wishes-for-Wife.jpg',
-    ''
   ]
   const baseRoute = './assets/images/'
   const canvas = document.querySelector('[data-wishes-wrapper] > img');
@@ -116,7 +115,7 @@ const wish = (function() {
    
   }
   changePic()
-  setInterval(changePic, 10000)
+  setInterval(changePic, 30000)
 
   return{ canvas}
 })()
@@ -124,3 +123,28 @@ const wish = (function() {
 setCarousel(carousel.sliderItems.length, carousel.body, 0);
 headerModule.addClickListener()
 headerModule.toggleMenu()
+
+
+const sections = document.querySelectorAll('section')
+const options = {
+  threshold : 0,
+  rootMargin : '-200px 0px -300px 0px'
+}
+console.log(sections)
+
+const observer = new IntersectionObserver(function(entries, observer) {
+  entries.forEach(entry => {
+    if(!entry.isIntersecting){
+      return
+    }else{
+      console.log(entry.target)
+    }
+    
+  })
+},options)
+sections.forEach(
+  section => {
+    observer.observe(section)
+  }
+)
+// observer.observe(sections)

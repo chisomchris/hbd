@@ -17,11 +17,11 @@ header{
     padding-top: calc(0.5 * var(--padding));
     padding-bottom: calc(0.5 * var(--padding));
     box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);
-    /* position: sticky;
+    position: sticky;
     top: 0%;
     left: 0%;
     right: 0%;
-    z-index: 10; */
+    z-index: 10;
     background-color: #ffffff;
 }
 header .header__wrapper{
@@ -35,14 +35,14 @@ header .header__wrapper{
 .header__wrapper nav{
     background-color: white;
     position: absolute;
-    top: calc(98% + 1rem);
+    top: calc(100% + (0.5 * var(--padding)));
     left: calc( -100% - 5vw);
     z-index: 2;
     padding-bottom: 1rem;
     padding-right: 0vw;
     overflow: hidden;
     box-shadow: 2px 5px 6px rgba(0, 0, 0, 0.15);
-    transition: left .1s linear;
+    transition: left .2s linear;
 }
 nav.active{
     left: -5vw;
@@ -56,7 +56,7 @@ ul{
 nav li {
     padding: .75rem 3rem .75rem 5vw;
     font-size: 1.25rem;
-    border-bottom: #ffd000 dashed .1px;
+    border-bottom: #ffd000 dashed 1px;
 }
 nav li:last-child {
     border-bottom:none;
@@ -81,7 +81,7 @@ nav li a{
     background-color: #ffd000;
 }
 .hamburger__menu_btn:focus{
-    outline: dotted blue 1.5px;
+    outline: dotted black 1.5px;
 }
 .hamburger__menu_btn.active .hamburger{
     background-color: transparent;
@@ -255,16 +255,16 @@ main{
     
   }
 .carousel__image{
- /* overflow: hidden; */
+ overflow: hidden; /* watching */
  border-radius: .3rem;
  background-color: #ffd000;
 }
 .carousel__image img{
     height: 100%;
     width: 100%;
-    /* object-fit: cover; */
-    /* object-position: center; */
-    opacity: .5;
+    object-fit: cover;
+    object-position: center;
+    opacity: .85; /* watching */
 }
 img{
     width: 100%;
@@ -286,23 +286,25 @@ img{
     box-shadow: 0px 3px 6px#00000020;
 }
 .card__text{
-    padding: calc(.5 * var(--padding));
-    margin-top: -.5rem;
+    padding: calc(.75 * var(--padding));
 }
 .card__text h3{
     text-transform: capitalize;
     color: var(--text-color);
+    font-family: 'Courier New', Courier, monospace;
 }
 .card img{
     height: 17.5rem;
     object-fit: cover;
     width: 100%;
+    object-position: center;
 }
 h1, h2{
     color: #ffd000;
 }
 p{
-    color: rgb(1, 1, 20);
+    color: var(--text-color);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 section > h2{
     text-align: center;
@@ -330,8 +332,10 @@ section > h2{
 
 /*  ABOUT SECTION STARTS */
 .about__text{
-    padding: calc(.5 * var(--padding));
-    margin-top: -0.5rem;
+    padding-top: calc(.5 * var(--padding));
+    padding-bottom: calc(.5 * var(--padding));
+    background-color: #ffffff;
+    text-align: justify;
 }
 .about__text p:first-of-type:first-letter{
     font-weight: bold;
@@ -351,8 +355,8 @@ p::first-letter{
     }
    
     .about__text{
-        padding: calc(1.5 * var(--padding));
-        background-color: white;
+        padding-left: calc(1.5 * var(--padding));
+        padding-right: calc(1.5 * var(--padding));
         border-radius: 1rem;
     }
     .about__text p:first-of-type{
@@ -386,15 +390,12 @@ footer{
 }
 .footer__wrapper p{
     color: #ffffff;
-    /* color: #ffd000; */
     text-align: center;
-    opacity: .8;
 }
-.footer__wrapper p span{
+.footer__wrapper span{
     font-weight: bold;
-    opacity: 1;
 }
-.footer__wrapper p span.color{
+.footer__wrapper span.color{
     color: #ffd000;
 }
 
