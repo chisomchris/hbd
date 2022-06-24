@@ -222,7 +222,7 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(255, 255, 255);
+    background-color: #ffffff;
     padding: calc( calc(.25 * var(--base-font)) + .25em) calc( calc( 0.75 * var(--base-font)) + .5em);
     border-radius: 5rem;
 }
@@ -255,16 +255,14 @@ main{
     
   }
 .carousel__image{
- overflow: hidden; /* watching */
  border-radius: .3rem;
- background-color: #ffd000;
+ background-color: #fcefb6;
 }
 .carousel__image img{
     height: 100%;
     width: 100%;
-    object-fit: cover;
-    object-position: center;
-    opacity: .85; /* watching */
+    /* object-fit: cover; */
+    /* object-position: center; */
 }
 img{
     width: 100%;
