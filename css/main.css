@@ -243,7 +243,7 @@ main{
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    /* overflow: hidden; */
+    overflow: hidden;
     position: relative;
 }
 .carousel{
@@ -255,7 +255,7 @@ main{
     
   }
 .carousel__image{
- overflow: hidden;
+ /* overflow: hidden; */
  border-radius: .3rem;
  background-color: #ffd000;
 }
@@ -264,12 +264,12 @@ main{
     width: 100%;
     object-fit: cover;
     object-position: center;
-    opacity: .2;
+    opacity: .5;
 }
-/* img{
+img{
     width: 100%;
     height: auto;
-} */
+}
 /* HERO SECTION ENDS */
 
 /* LIKES SECTION STARTS*/
