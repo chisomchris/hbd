@@ -283,7 +283,7 @@ img{
 .card{
     border-radius: .5rem;
     overflow: hidden;
-    box-shadow: 0px 3px 6px#00000020;
+    box-shadow: 0px 3px 6px #00000020;
 }
 .card__text{
     padding: calc(.75 * var(--padding));

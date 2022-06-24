@@ -55,28 +55,15 @@ function setCarousel(sliderItems, element, index) {
 }
 
 const headerModule = (() => {
-  const links = document.querySelectorAll("nav ul li")
   const  menuBtn = document.querySelector("[data-hamburger]")
   const navMenu = document.querySelector("header nav")
-  const addClickListener = function() {
-    links.forEach(btn => {
-      btn.addEventListener('click', () => {
-        links.forEach((btn) => {
-          btn.classList.remove("active");
-        });
-        btn.classList.add("active");
-        navMenu.classList.remove("active");
-        menuBtn.classList.remove('active')
-      })
-    })
-  } 
   const toggleMenu = () => {
     menuBtn.addEventListener("click", (e) => {
       navMenu.classList.toggle("active");
       menuBtn.classList.toggle('active')
     })}
 
-    return {addClickListener,toggleMenu}
+    return {toggleMenu}
 })()
 
 
@@ -130,28 +117,37 @@ const wish = (function() {
 })()
 
 setCarousel(carousel.sliderItems.length, carousel.body, 0);
-headerModule.addClickListener()
-headerModule.toggleMenu()
+headerModule.toggleMenu();
 
-
-const sections = document.querySelectorAll('section')
-const options = {
-  threshold : 0,
-  rootMargin : '-200px 0px -300px 0px'
-}
-
-const observer = new IntersectionObserver(function(entries, observer) {
-  entries.forEach(entry => {
-    if(!entry.isIntersecting){
-      return
-    }else{
-      console.log(entry.target)
+ (function(){
+    const sections = document.querySelectorAll('section')
+    const options = {
+      threshold : 0,
+      rootMargin : '0px 0px -500px 0px'
     }
-    
-  })
-},options)
-sections.forEach(
-  section => {
-    observer.observe(section)
-  }
-)
+
+    const observer = new IntersectionObserver(function(entries, observer) {
+      entries.forEach(entry => {
+        if(!entry.isIntersecting){
+          return
+        }else{
+          const links = document.querySelectorAll("nav ul li")
+          const value = entry.target.getAttribute('id')
+          const index = [...sections].findIndex(item => {
+            return item.getAttribute('id') === value
+          })
+          links.forEach((btn) => {
+            btn.classList.remove("active");
+          });
+          links[index].classList.add('active')
+        }
+        
+      })
+    },options)
+    sections.forEach(
+      section => {
+        observer.observe(section)
+      }
+    )
+}
+)()
