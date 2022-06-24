@@ -223,7 +223,6 @@ main{
     justify-content: center;
     align-items: center;
     background-color: rgb(255, 255, 255);
-    gap: 25px;
     padding: calc( calc(.25 * var(--base-font)) + .25em) calc( calc( 0.75 * var(--base-font)) + .5em);
     border-radius: 5rem;
 }
@@ -232,7 +231,9 @@ main{
     width: calc( 5 * var(--base-font));
     border-radius: 30px;
     border: #ffd000 solid calc( calc(.1 * var(--base-font)) + .1em);
-
+}
+.slider__indicator__wrapper .indicator:not(:first-of-type){
+    margin-left: 1.5rem;
 }
 .slider__indicator__wrapper .indicator.active{
     background-color: #ffd000;
