@@ -142,6 +142,15 @@ nav li a{
     width: auto;
     object-fit: cover;
     object-position: center;
+
+
+    color: #f2f2f2;
+    color: #3f3d56;
+    color: #6c63ff;
+    color: #ffb8b8;
+    color: #2f2e41;
+    color: #ff6584;
+    color: #ccc;
 }
 
 /* media query */
@@ -258,7 +267,7 @@ main{
     height: 100%;
     overflow: hidden;
     border-radius: .3rem;
-    background-color: #ffd00054;
+    background-color: #ffd00020;
 }
 .carousel__image img{
     height: 100%;
